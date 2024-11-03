@@ -69,7 +69,7 @@ node githubDatabase.js
 ```
 
 Not: GithubAPI (githubAPI.js) de yapılan proje sayıları araması "[query] projects" şeklinde yapılmıştır.
-Not: arxiv.com da yapılan proje başlıkları araması için doğrudan "[query]" kullanılmıştır.
+Not: arxiv.org da yapılan proje başlıkları araması için doğrudan "[query]" kullanılmıştır.
 Not: Projenin **backend** klasöründe bulunan **.env** dosyasında, Gemini AI API yi kullanabilmek için API anahtarını yazmak gerekmektedir.
 
 ## Çalıştırma
