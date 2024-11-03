@@ -1,0 +1,10 @@
+{
+    "name": "hackathon-proje",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "concurrently \"cd backend && node server.js\" \"cd frontend && npm run dev\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

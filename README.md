@@ -1,0 +1,7 @@
+# HACKATON PROJE
+
+## Genel Bakış
+Bu proje, BTK Akademi'nin düzenlemiş olduğu HACKATON 2024 kapsamında geliştirilmiştir.. Proje, **backend** ve **frontend** bileşenlerinden oluşmakta olup, web scraping işlevselliği ve MySQL ile **local** de çalışan bir veritabanından oluşmaktadır..
+
+## Proje Yapısı
+HACKATON PROJE/ │ ├── backend/ # Arka uç (Node.js) dosyaları │ ├── analyzer.js # Verileri analiz eden modül │ ├── countProjects.js # Proje sayısını hesaplayan modül │ ├── projectCountsDatabase.js # Proje sayıları veritabanı işlemleri │ ├── projectTitlesDatabase.js # Proje başlıkları veritabanı işlemleri │ ├── server.js # Sunucu başlangıç dosyası │ ├── package.json # Arka uç bağımlılıkları │ └── package-lock.json # Arka uç bağımlılık kilidi │ ├── frontend/ # Ön yüz (React/Vite) dosyaları │ ├── public/ # Statik dosyalar │ ├── src/ # Uygulama kaynak dosyaları │ ├── index.html # Ana HTML dosyası │ ├── vite.config.js # Vite yapılandırma dosyası │ ├── package.json # Ön yüz bağımlılıkları │ └── package-lock.json # Ön yüz bağımlılık kilidi │ ├── WebScrapping_Database/ # Web scraping için veritabanı dosyaları │ ├── database.js # Veritabanı bağlantısı ve işlemleri │ ├── githubAPI.js # GitHub API ile etkileşim │ ├── githubDatabase.js # GitHub veritabanı işlemleri │ ├── index.js # Web scraping başlangıç dosyası │ ├── package.json # Web scraping bağımlılıkları │ └── package-lock.json # Web scraping bağımlılık kilidi │ └── README.md #
