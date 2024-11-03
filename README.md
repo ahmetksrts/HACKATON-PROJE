@@ -51,7 +51,7 @@ cd ../WebScrapping_Database
 npm install
 ```
 
-## Veritabanını Hazırlama
+## Veritabanını-Hazırlama
 
 Öncelikle veritabanı için MySQL kullanılmıştır. **Local** de iki tane veritabanı oluşturmamız gerek. Bir tanesi web scrapping ile çekilen proje başlıkları verilerini depolamak için oluşturulacak. Diğeri ise GithubAPI kullanılarak çekilen proje sayıları verilerini depolamak için oluşturulacak.
 
@@ -69,9 +69,11 @@ cd WebScrapping_Database
 node githubDatabase.js
 ```
 
-Not: GithubAPI (githubAPI.js) de yapılan proje sayıları araması "[query] projects" şeklinde yapılmıştır.
-Not: arxiv.org da yapılan proje başlıkları araması için doğrudan "[query]" kullanılmıştır.
-Not: Projenin **backend** klasöründe bulunan **.env** dosyasında, Gemini AI API yi kullanabilmek için API anahtarını yazmak gerekmektedir.
+-Not: GithubAPI (githubAPI.js) de yapılan proje sayıları araması "[query] projects" şeklinde yapılmıştır.
+
+-Not: arxiv.org da yapılan proje başlıkları araması için doğrudan "[query]" kullanılmıştır.
+
+-Not: Projenin **backend** klasöründe bulunan **.env** dosyasında, Gemini AI API yi kullanabilmek için API anahtarını yazmak gerekmektedir.
 
 ## Çalıştırma
 Projeyi başlatmak için ana dizinde aşağıdaki komutu çalıştırın:
