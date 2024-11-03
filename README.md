@@ -5,7 +5,7 @@ Bu proje, BTK Akademi'nin düzenlemiş olduğu HACKATON 2024 kapsamında, **Ahme
 
 
 ## Proje Yapısı
-```
+```bash
 HACKATON PROJE/ 
 │ ├── backend/ # Arka uç (Node.js) dosyaları 
     │ ├── analyzer.js # Verileri analiz eden Gemini API modülü 
@@ -64,7 +64,7 @@ node database.js
 
 Veritabanına proje sayılarını eklemek için projenin ana dizininde şu komut çalıştırılmalıdır:
 
-```
+```bash
 cd WebScrapping_Database
 node githubDatabase.js
 ```
@@ -78,7 +78,7 @@ node githubDatabase.js
 ## Çalıştırma
 Projeyi başlatmak için ana dizinde aşağıdaki komutu çalıştırın:
 
-```
+```bash
 npm start
 ```
 
