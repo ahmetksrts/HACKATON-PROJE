@@ -39,7 +39,7 @@ HACKATON PROJE/
 2. **Bağımlılıkları Yükleme**
    Hem arka uç hem de ön yüz bağımlılıklarını yüklemek için, aşağıdaki komutları her klasör içinde çalıştırın:
 
-   ```bash
+   ```
    cd backend
    npm install
 
@@ -48,19 +48,24 @@ HACKATON PROJE/
 
    cd ../WebScrapping_Database
    npm install
+   ```
 
 ## Veritabanını Hazırlama
 Öncelikle veritabanı için MySQL kullanılmıştır. **Local** de iki tane veritabanı oluşturmamız gerek. Bir tanesi web scrapping ile çekilen proje başlıkları verilerini depolamak için oluşturulacak. Diğeri ise GithubAPI kullanılarak çekilen proje sayıları verilerini depolamak için oluşturulacak.
 
 Veritabanına proje başlıklarını eklemek için projenin ana dizininde şu komut çalıştırılmalıdır:
+
     ```
     cd WebScrapping_Database
     node database.js
+    ```
 
 Veritabanına proje sayılarını eklemek için projenin ana dizininde şu komut çalıştırılmalıdır:
+
     ```
     cd WebScrapping_Database
     node githubDatabase.js
+    ```
 
 Not: GithubAPI (githubAPI.js) de yapılan proje sayıları araması "[query] projects" şeklinde yapılmıştır.
 Not: arxiv.com da yapılan proje başlıkları araması için doğrudan "[query]" kullanılmıştır.
@@ -68,8 +73,10 @@ Not: Projenin **backend** klasöründe bulunan **.env** dosyasında, Gemini AI A
 
 ## Çalıştırma
 Projeyi başlatmak için ana dizinde aşağıdaki komutu çalıştırın:
+
     ```
     npm start
+    ```
 
 ## Kullanım
 Proje, kullanıcı arayüzünde seçilmiş olan (kullanıcı tarafından) proje alanı için, web scrapping ile hazırlanan proje başlıkları veritabanını kullanarak Gemini AI ile yeni bir proje konusu önerisi almayı amaçlıyor. Aynı zamanda kullanıcı arayüzü kısmında seçilen proje alanı ile ilgili yıllara göre proje sayıları dağılımını grafik olarak vererek daha canlı bir kullanıcı arayüzü sunmak amaçlanmıştır.
