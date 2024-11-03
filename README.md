@@ -40,16 +40,16 @@ HACKATON PROJE/
 2. **Bağımlılıkları Yükleme**
    Hem arka uç hem de ön yüz bağımlılıklarını yüklemek için, aşağıdaki komutları her klasör içinde çalıştırın:
 
-    ```
-    cd backend
-    npm install
+```bash
+cd backend
+npm install
 
-    cd ../frontend
-    npm install
+cd ../frontend
+npm install
 
-    cd ../WebScrapping_Database
-    npm install
-    ```
+cd ../WebScrapping_Database
+npm install
+```
 
 ## Veritabanını Hazırlama
 
