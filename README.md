@@ -3,6 +3,7 @@
 ## Genel Bakış
 Bu proje, BTK Akademi'nin düzenlemiş olduğu HACKATON 2024 kapsamında, **Ahmet Berke Kösretaş, Orhan Barış Uzel, Gamze Nur Erdem, Emre Kaan Özkan** tarafından geliştirilmiştir. Proje, **backend** ve **frontend** bileşenlerinden oluşmakta olup, web scraping işlevselliği ve MySQL ile **local** de çalışan bir veritabanından oluşmaktadır.
 
+--------------
 
 ## Proje Yapısı
 ```bash
@@ -31,6 +32,7 @@ HACKATON PROJE/
     │ └── package-lock.json # Web scraping bağımlılık kilidi 
 │ └── README.md #
 ```
+--------------
 
 ## Kurulum
 
@@ -50,6 +52,7 @@ npm install
 cd ../WebScrapping_Database
 npm install
 ```
+--------------
 
 ## Veritabanını Hazırlama
 
@@ -61,6 +64,7 @@ Veritabanına proje başlıklarını eklemek için projenin ana dizininde şu ko
 cd WebScrapping_Database
 node database.js
 ```
+--------------
 
 Veritabanına proje sayılarını eklemek için projenin ana dizininde şu komut çalıştırılmalıdır:
 
@@ -68,6 +72,7 @@ Veritabanına proje sayılarını eklemek için projenin ana dizininde şu komut
 cd WebScrapping_Database
 node githubDatabase.js
 ```
+--------------
 
 -Not: GithubAPI (githubAPI.js) de yapılan proje sayıları araması "[query] projects" şeklinde yapılmıştır.
 
@@ -75,12 +80,15 @@ node githubDatabase.js
 
 -Not: Projenin **backend** klasöründe bulunan **.env** dosyasında, Gemini AI API yi kullanabilmek için API anahtarını yazmak gerekmektedir.
 
+--------------
+
 ## Çalıştırma
 Projeyi başlatmak için ana dizinde aşağıdaki komutu çalıştırın:
 
 ```bash
 npm start
 ```
+--------------
 
 ## Kullanım
 Proje, kullanıcı arayüzünde seçilmiş olan (kullanıcı tarafından) proje alanı için, web scrapping ile hazırlanan proje başlıkları veritabanını kullanarak Gemini AI ile yeni bir proje konusu önerisi almayı amaçlıyor. Aynı zamanda kullanıcı arayüzü kısmında seçilen proje alanı ile ilgili yıllara göre proje sayıları dağılımını grafik olarak vererek daha canlı bir kullanıcı arayüzü sunmak amaçlanmıştır.
