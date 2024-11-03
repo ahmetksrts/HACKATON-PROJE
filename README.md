@@ -40,18 +40,18 @@ HACKATON PROJE/
 2. **Bağımlılıkları Yükleme**
    Hem arka uç hem de ön yüz bağımlılıklarını yüklemek için, aşağıdaki komutları her klasör içinde çalıştırın:
 
-```
-cd backend
-npm install
+    ```
+    cd backend
+    npm install
 
-cd ../frontend
-npm install
+    cd ../frontend
+    npm install
 
-cd ../WebScrapping_Database
-npm install
-```
+    cd ../WebScrapping_Database
+    npm install
+    ```
 
-## Veritabanını-Hazırlama
+## Veritabanını Hazırlama
 
 Öncelikle veritabanı için MySQL kullanılmıştır. **Local** de iki tane veritabanı oluşturmamız gerek. Bir tanesi web scrapping ile çekilen proje başlıkları verilerini depolamak için oluşturulacak. Diğeri ise GithubAPI kullanılarak çekilen proje sayıları verilerini depolamak için oluşturulacak.
 
