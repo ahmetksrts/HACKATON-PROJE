@@ -1,7 +1,7 @@
 # HACKATON PROJE
 
 ## Genel Bakış
-Bu proje, BTK Akademi'nin düzenlemiş olduğu HACKATON 2024 kapsamında, Ahmet Berke Kösretaş, Orhan Barış Uzel, Gamze Nur Erdem, Emre Kaan Özkan tarafından geliştirilmiştir. Proje, **backend** ve **frontend** bileşenlerinden oluşmakta olup, web scraping işlevselliği ve MySQL ile **local** de çalışan bir veritabanından oluşmaktadır.
+Bu proje, BTK Akademi'nin düzenlemiş olduğu HACKATON 2024 kapsamında, **Ahmet Berke Kösretaş, Orhan Barış Uzel, Gamze Nur Erdem, Emre Kaan Özkan** tarafından geliştirilmiştir. Proje, **backend** ve **frontend** bileşenlerinden oluşmakta olup, web scraping işlevselliği ve MySQL ile **local** de çalışan bir veritabanından oluşmaktadır.
 
 
 ## Proje Yapısı
