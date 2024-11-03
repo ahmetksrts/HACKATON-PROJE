@@ -1,7 +1,8 @@
 # HACKATON PROJE
 
 ## Genel Bakış
-Bu proje, BTK Akademi'nin düzenlemiş olduğu HACKATON 2024 kapsamında geliştirilmiştir.. Proje, **backend** ve **frontend** bileşenlerinden oluşmakta olup, web scraping işlevselliği ve MySQL ile **local** de çalışan bir veritabanından oluşmaktadır.
+Bu proje, BTK Akademi'nin düzenlemiş olduğu HACKATON 2024 kapsamında, Ahmet Berke Kösretaş, Orhan Barış Uzel, Gamze Nur Erdem, Emre Kaan Özkan tarafından geliştirilmiştir. Proje, **backend** ve **frontend** bileşenlerinden oluşmakta olup, web scraping işlevselliği ve MySQL ile **local** de çalışan bir veritabanından oluşmaktadır.
+
 
 ## Proje Yapısı
 ```
@@ -39,33 +40,33 @@ HACKATON PROJE/
 2. **Bağımlılıkları Yükleme**
    Hem arka uç hem de ön yüz bağımlılıklarını yüklemek için, aşağıdaki komutları her klasör içinde çalıştırın:
 
-   ```
-   cd backend
-   npm install
+```
+cd backend
+npm install
 
-   cd ../frontend
-   npm install
+cd ../frontend
+npm install
 
-   cd ../WebScrapping_Database
-   npm install
-   ```
+cd ../WebScrapping_Database
+npm install
+```
 
 ## Veritabanını Hazırlama
 Öncelikle veritabanı için MySQL kullanılmıştır. **Local** de iki tane veritabanı oluşturmamız gerek. Bir tanesi web scrapping ile çekilen proje başlıkları verilerini depolamak için oluşturulacak. Diğeri ise GithubAPI kullanılarak çekilen proje sayıları verilerini depolamak için oluşturulacak.
 
 Veritabanına proje başlıklarını eklemek için projenin ana dizininde şu komut çalıştırılmalıdır:
 
-    ```
-    cd WebScrapping_Database
-    node database.js
-    ```
+```
+cd WebScrapping_Database
+node database.js
+```
 
 Veritabanına proje sayılarını eklemek için projenin ana dizininde şu komut çalıştırılmalıdır:
 
-    ```
-    cd WebScrapping_Database
-    node githubDatabase.js
-    ```
+```
+cd WebScrapping_Database
+node githubDatabase.js
+```
 
 Not: GithubAPI (githubAPI.js) de yapılan proje sayıları araması "[query] projects" şeklinde yapılmıştır.
 Not: arxiv.com da yapılan proje başlıkları araması için doğrudan "[query]" kullanılmıştır.
@@ -74,9 +75,9 @@ Not: Projenin **backend** klasöründe bulunan **.env** dosyasında, Gemini AI A
 ## Çalıştırma
 Projeyi başlatmak için ana dizinde aşağıdaki komutu çalıştırın:
 
-    ```
-    npm start
-    ```
+```
+npm start
+```
 
 ## Kullanım
 Proje, kullanıcı arayüzünde seçilmiş olan (kullanıcı tarafından) proje alanı için, web scrapping ile hazırlanan proje başlıkları veritabanını kullanarak Gemini AI ile yeni bir proje konusu önerisi almayı amaçlıyor. Aynı zamanda kullanıcı arayüzü kısmında seçilen proje alanı ile ilgili yıllara göre proje sayıları dağılımını grafik olarak vererek daha canlı bir kullanıcı arayüzü sunmak amaçlanmıştır.
