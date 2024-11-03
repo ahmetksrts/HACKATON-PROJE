@@ -57,7 +57,7 @@ npm install
 
 Veritabanına proje başlıklarını eklemek için projenin ana dizininde şu komut çalıştırılmalıdır:
 
-```
+```bash
 cd WebScrapping_Database
 node database.js
 ```
